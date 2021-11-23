@@ -1,0 +1,12 @@
+version: '3.0'
+services:
+  ruby:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports: 
+      - 4567:4567
+   
+  redis:
+    image: redis
+    
